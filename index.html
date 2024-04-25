@@ -5,164 +5,198 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jana Gagan Portfolio</title>
 
+  <!-- Bootstrap Link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Open+Sans&display=swap" rel="stylesheet">
 
+  <!-- External CSS -->
   <link rel="stylesheet" type="text/css" href="./index.css">
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-info text-white sticky">
-    <div class="container text-center">
-      <ul class="navbar-nav mx-auto">
-        <li class="nav-item">
-          <a class="nav-link text-decoration-none" href="#landing">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-decoration-none" href="#projects">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#tools">Tools</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
-        </li>
-      </ul>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav mx-auto">
+        <a class="nav-link text-decoration-none" href="#landing">Home</a>
+        <a class="nav-link text-decoration-none" href="#projects">Projects</a>
+        <a class="nav-link text-decoration-none" href="#tools">Tools</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </div>    
     </div>
-  </nav>
+  </div>
+</nav>
 
-  <div id="main" class="container-fluid py-4">
+	<!-- Landing Section -->
+	<div class="py-5 container-fluid" id="landing">
+		<div class="row justify-content-center py-5 my-5">
+			<div class="col-md-8 pt-md-5 text-center">
+				<h1 id="title">Looking for a full-stack developer?</h1>
+				<a href="#projects" class="btn btn-custom mt-2">View my work</a>
+			</div>
+		</div>
+	</div>
+	<!-- Landing Section End -->
 
-    <section id="landing">
-      <div class="container-fluid text-center min-vh-50 p-3 md-5">
 
-        <div>
-          <img src="./images/Jana.jpg" class="img rounded-circle img-fluid">
-          <h2>Jana Gagan</h2>
-          <h3 class="p-3">Full Stack Web Developer</h3>
-          <p class="text-justify">As a full stack web developer, I possess a comprehensive skill set that spans both the front-end and back-end aspects of web development. My expertise includes proficiency in languages such as HTML, CSS, JavaScript for creating dynamic and responsive user interfaces, as well as server-side technologies like Node.js or Python. I am adept at designing and implementing databases, ensuring seamless data management and retrieval. With a strong understanding of various web development frameworks and libraries, I can efficiently navigate the complexities of building scalable and efficient web applications. Additionally, my problem-solving abilities, attention to detail, and commitment to staying updated on emerging technologies contribute to my effectiveness in creating innovative and robust solutions for diverse web development projects.</p>
+  <!-- About Section -->
+  <section id="about">
+    <div class="container-fluid p-md-5">
+      <div class="row justify-content-center py-md-5 my-md-5">
+        <div class="col-md-3 my-5 my-md-0">
+          <img src="./images/Jana.jpg" class="img-fluid">
         </div>
-      </div>
-    </section>
-
-    <!-- Projects Section Start -->
-    <section id="projects">
-      <div class="container text-center text-white p-4"> 
-
-        <h3 class="my-8">Projects</h3>
-
-        <!-- E-commerce Card Start -->
-        <div id="ecommerce" class="mt-4 md-4 row">
-          <div class="text-sm-center pt-3 pb-3 col-sm-12 col-md-6 order-1 order-md-1"> 
-            <img id="ecommerceImg" class="img-fluid" src="./images/e-commerce.png"/>
-          </div>
-          <div class="text-sm-center pt-3 pb-3 col-sm-12 col-md-6 order-2 order-md-2"> 
-            <h4>E-commerce</h4>
-            <p class="text-justify p-3">Explore a curated collection of high-quality products, presented in a visually stunning interface that prioritizes user engagement and satisfaction. Our website boasts a responsive design, ensuring a seamless transition between desktop and mobile devices, so your customers can shop with ease anytime, anywhere.</p>
-          </div>
+        <div class="col-md-7 ml-4 px-2">
+          <h4 id="text-title">Hi! I'm Jana Gagan.</h4>
+          <p>Welcome to my portfolio! I'm a passionate full-stack web developer with a knack for creating engaging and dynamic web applications. With a solid foundation in HTML, CSS, and JavaScript, I specialize in crafting intuitive user interfaces and seamless user experiences.</p>
+          <p>Equipped with frameworks like Bootstrap and libraries like React, I bring designs to life with responsive layouts and interactive components. My proficiency in MongoDB and Express allows me to build robust back-end systems, ensuring data integrity and efficient server-side operations. Whether it's building RESTful APIs or handling authentication, I thrive on the challenges of back-end development.</p>
+          <p>My toolkit also includes Node.js, empowering me to build scalable and high-performance applications from end to end. I'm adept at using Postman for API testing and debugging, ensuring smooth communication between front-end and back-end components.</p>
+          <p>I'm passionate about learning and staying updated with the latest technologies, always seeking opportunities to expand my knowledge and refine my craft. Let's collaborate and bring your ideas to life with cutting-edge web development solutions!</p>
+          <a href="https://drive.google.com/file/d/1TeJjcGUBew0Gsj4IjWpkTEMu8mXj8Ejj/view?usp=sharing" target="_blank"class="btn btn-custom mr-2">Resume</a>
+          <a href="mailto:janagagan@gmail.com" class="btn btn-custom">Contact</a> 
         </div>
-        <!-- E-commerce Card End -->
-
-
-        <!-- Blog Card Start -->
-        <div id="blog" class="mt-4 mb-3 md-4 row"> 
-          <div class="text-sm-center pt-3 pb-3 col-sm-12 col-md-6 order-2 order-md-2"> 
-            <h4>Blog</h4>
-            <p class="text-justify p-3">Immerse yourself in a visually captivating and user-friendly platform where ideas come to life. With a sleek and responsive layout, my blog ensures a seamless reading experience across all devices. Navigating through topics is a breeze, thanks to an intuitive interface that prioritizes accessibility and engagement. </p>
-          </div>
-          <div class="text-sm-center pt-3 pb-3 col-sm-12 col-md-6 order-1 order-md-1">
-            <img id="blogImg" class="img-fluid" src="./images/blog.jpg"/>
-          </div>
-        </div>
-        <!-- Blog Card  End -->
-
-        <!-- Online Booking Card Start -->
-        <div id="onlinebooking" class="mt-4 mb-3 md-4 row">
-          <div class="text-sm-center pt-3 pb-3 col-sm-12 col-md-6 order-1 order-md-1"> 
-            <img id="bookingImg" class="img-fluid" src="./images/booking.png"/>
-          </div>
-          <div class="text-sm-center pt-3 pb-3 col-sm-12 col-md-6 order-2 order-md-2">
-            <h4>Online Booking</h4>
-            <p class="text-justify p-3">Navigate through our intuitive interface to effortlessly book appointments, events, or services. With a responsive design, users can easily access the platform from any device, ensuring a hassle-free booking experience on the go. From sleek calendars to straightforward confirmation processes.</p>
-          </div>
-        </div>
-        <!-- Online Booking Card  End -->
-
-      </div>
-    </section>
-    <!-- Projects Section End -->
-
-    <!-- Tool Section -->
-    <section id="tools">
-      <h3 class="text-center p-3">Tools</h3>
-      <div id="tools-use">
-        <img src="https://i.imgur.com/jtl7Ozc.png" class="tools-img">
-        <img src="https://i.imgur.com/Tau2zTi.png" class="tools-img">
-        <img src="https://i.imgur.com/bg5PuHm.png" class="tools-img">
-        <img src="https://i.imgur.com/Hj2Pt6C.png" class="tools-img">
-        <img src="https://1000logos.net/wp-content/uploads/2020/08/MongoDB-Emblem.jpg" class="tools-img">
-        <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/nodejs-1-logo.png" class="tools-img">
-        <img src="https://programador-jr.vercel.app/assets/images/expressjs.png" class="tools-img">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" class="tools-img">
-      </div>
-    </section>
-    <!-- Tools Section End -->
-
-    <!-- Contact Section start-->
-    <section id="contact">
-      <h3 class="text-white">Connect With Me</h3>
-      
-      <div id="social"> 
-        
-        <a href="https://www.facebook.com/janagagan/" target="_blank"><img src="https://i.imgur.com/rYeyOtS.png" class="social-img"></a>
-
-        <a href="https://www.linkedin.com/in/janagagan/" target="_blank"><img src="https://i.imgur.com/nYjgy9h.png" class="social-img"></a> 
-        
-        <a href="https://github.com/" target="_blank"><img src="https://i.imgur.com/jCKCNMS.png" class="social-img"></a>
-        
-        <a href="https://gitlab.com/" target="_blank"><img src="https://i.imgur.com/XSpMej7.png" class="social-img"></a>
-        
       </div>
     </div>
-    
-    <div id="msgForm" class="form-container my-3">
-      <h3>Send a message</h3>
-      <form action="https:google.com">
-        <label for='firstName'>First Name:</label>
-        <input type="text" name="firstName" id="firstName" class="form-input" required autocomplete />
+  </section>
+  <!-- About Section End-->
 
-        <label for='lastName'>Last Name:</label>
-        <input type="text" name="lastName" id="lastName" class="form-input" required autocomplete />
-
-        <label for='email'>Email:</label>
-        <input type="text" name="email" id="email" class="form-input" required autocomplete />
-
-        <label for="contactNum">Contact Number:</label>
-        <input type="text" name="contactNum" id="contactNum" class="form-input" required>
-
-        <label for="Message">Message:</label>
-        <textarea name="Message" rows="5" id="Message" class="form-input"></textarea>
-
-
-        <button type="submit" class="btn-dark px-3">Submit</button>
-        <button type="reset" class="btn-dark px-3">Reset</button>
-      </form>
-      
-      <!-- Contact Section End -->
-    </div>
-    <!-- Main Content Section End -->
-
-    <footer>
-      <div class="container mx-auto text-center text-white py-3 bg-info">
-        <span>Jana Gagan</span>
-        <span>|</span>
-        <span>All Rights Reserved</span>
-        <span>|</span>
-        <span>&copy; 2024</span>
+  <!-- Projects Section Start -->
+  <section id="projects">
+    <h2 class="text-center p-5">Projects</h2>
+    <div class="container my-5">
+      <div class="row my-md-5 py-md-5 justify-content-center">
+        <!-- Project Card 1 -->
+        <div class="col-md-6 my-3 mx-auto"> 
+          <div class="card">
+            <img src="./images/e-commerce.JPG" class="card-img-top" alt="E-commerce Project Image">
+            <div class="card-body">
+              <h5 class="card-title">E-commerce</h5>
+              <p class="card-text">I developed an E-commerce application using the MERN (MongoDB, Express.js, React.js, Node.js) stack, designed to provide a seamless shopping experience for users across various devices.</p>
+              <a href="http://zuitt-bootcamp-prod-364-6617-gagan.s3-website.us-east-1.amazonaws.com/" class="btn btn-custom">View Project</a>
+            </div>
+          </div>
+        </div>
+          <!-- Project Card 2 -->
+          <div class="col-md-6 my-3 mx-auto"> 
+            <div class="card">
+              <img src="./images/backend.png" class="card-img-top" alt="E-commerce Project Image">
+              <div class="card-body">
+                <h5 class="card-title">Backend</h5>
+                <p class="card-text">I developed a robust E-commerce API using Node.js and Express.js, and MongoDB focusing on backend functionality. The API ensures efficient and reliable performance making use of the CRUD operations.</p>
+                <a href="http://ec2-18-217-154-136.us-east-2.compute.amazonaws.com/b5/products/" class="btn btn-custom">View Project</a>
+              </div>
+            </div>
+          </div>
       </div>
-    </footer>
+    </div>
+  </section>
+  <!-- Projects Section End -->
 
-  </body>
-  </html>
+  <!-- Tool Section -->
+  <section id="tools">
+    <h2 class="text-center p-5">Tools I Use</h2>
+    <div class="container my-5">
+      <div class="row my-md-5 py-md-5 justify-content-center">
+        <div class="col-md-auto col-4 my-3">
+          <img src="./images/HTML.png" class="tools-img">
+        </div>
+        <div class="col-md-auto col-4 my-3">
+          <img src="./images/CSS.png" class="tools-img">
+        </div>
+        <div class="col-md-auto col-4 my-3">
+          <img src="./images/BOOTSTRAP.png" class="tools-img">
+        </div>
+        <div class="col-md-auto col-4 my-3">
+          <img src="./images/javascript.png" class="tools-img">
+        </div>
+        <div class="col-md-auto col-4 my-3">
+          <img src="./images/MONGODB.png" class="tools-img">
+        </div>
+        <div class="col-md-auto col-4 my-3">
+          <img src="./images/EXPRESSJS.png" class="tools-img">
+        </div>
+        <div class="col-md-auto col-4 my-3">
+          <img src="./images/REACT.png" class="tools-img">
+        </div>
+        <div class="col-md-auto col-4 my-3">
+          <img src="./images/NODEJS.png" class="tools-img">
+        </div>
+        <div class="col-md-auto col-4 my-3">
+          <img src="./images/postman.png" class="tools-img">
+        </div>
+        <div class="col-md-auto col-4 my-3">
+          <img src="./images/GIT.png" class="tools-img">
+        </div>
+        <div class="col-md-auto col-4 my-3">
+          <img src="./images/VSCODE.png" class="tools-img">
+        </div>
+        <div class="col-md-auto col-4 my-3">
+          <img src="./images/sublime.png" class="tools-img">
+        </div>
+        <div class="col-md-auto col-4 my-3">
+          <img src="./images/canva.png" class="tools-img">
+        </div>
+        <div class="col-md-auto col-4 my-3">
+          <img src="./images/wordpress.png" class="tools-img">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Tools Section End -->
+
+<!-- Contact Section Start-->
+<section id="contact">
+  <div class="container py-5">
+    <div class="row justify-content-center">     
+      <div class="col-md-6 col-sm-10 text-center">
+        <h3>Ready to work together?</h3>
+        <p>Reach out if you want to make your ideas a reality.</p>
+        <div class="row justify-content-center">
+          <div class="col-12 col-sm-6 col-md-6 mt-3">
+            <div class="d-flex align-items-center">
+              <a href="mailto:janagagan@gmail.com" target="_blank"><img src="./images/email.png" class="img-fluid mr-2" style="max-width: 50px;"></a>
+              <p class="m-0">janagagan@gmail.com</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 mt-3">
+            <div class="d-flex align-items-center">
+              <a href="tel:+6399985675621" target="_blank"><img src="./images/phone.png" class="img-fluid mr-2" style="max-width: 50px;"></a>
+              <p class="m-0">+639 998 567 5621</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 mt-3">
+            <div class="d-flex align-items-center">
+              <a href="https://www.linkedin.com/in/janagagan/" target="_blank"><img src="./images/linkedin.png" class="img-fluid mr-2" style="max-width: 50px;"></a>
+              <p class="m-0">/janagagan</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 mt-3">
+            <div class="d-flex align-items-center">
+              <a href="https://github.com/ldyggn" target="_blank"><img src="./images/github1.png" class="img-fluid mr-2" style="max-width: 50px;"></a>
+              <p class="m-0">/ldyggn</p>
+            </div>
+          </div>
+        </div>
+      </div>     
+    </div>
+  </div>
+</section>
+<!-- Contact Section End -->
+
+
+  <footer class="py-3 px-2 text-center">
+    Copyright &copy; 2024 Jana Gagan
+  </footer>
+  <!-- Bootstrap Script -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+</html>
