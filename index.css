@@ -24,26 +24,27 @@ body {
 	font-size: 64px;
 	font-weight: 600;
 	line-height: 72px;
+  text-align: center;
   }
   
-  /* About section */
-  #about {
+ /* About section */
+#about {
 	color: #B59066;
-  }
-  
-  #text-title {
+}
+
+#paragraph {
 	color: #B59066;
-	font-size: 24px;
-	font-weight: 700;
-	line-height: 32px;
-  }
-  
-  #about p {
-	font-size: 16px;
-	font-weight: 500;
-	line-height: 24px;
-  }
-  
+	font-size: 33px;
+	font-weight: 200;
+	line-height: 40px;
+	margin-top: 20px; 
+  text-align: justify;
+}
+
+#about .col-md-7 {
+	margin-top: 50px; 
+}
+
   .btn-custom {
     background-color: #B59066;
     border-radius: 30px;
@@ -56,27 +57,39 @@ body {
 	background-color: #B59066;
   }
   
-  /* Projects section */
-  #projects {
+ /* Projects section */
+#projects {
 	background: url("./images/base.svg") no-repeat;
 	background-size: cover;
 	color: #B59066;
 	padding: 50px 0;
-  }
-  
-  #projects .card {
+}
+
+#projects h2 {
+	font-size: 48px; 
+	font-weight: 600; 
+	margin-bottom: 30px; 
+}
+
+#projects .card {
 	margin-bottom: 30px;
-  }
-  
-  .card-title,
-  .card-text {
+}
+
+.card-title,
+.card-text {
 	color: #000;
-  }
-  
-  /* Tools section */
+}
+
+/* Tools section */
   #tools {
 	color: #B59066;
 	padding: 50px 0;
+  }
+
+  #tools h2 {
+    font-size: 48px;
+    font-weight: 600; 
+    margin-bottom: 30px;
   }
   
   .tools-img {
@@ -93,60 +106,53 @@ body {
 	color: #fff;
   }
   
-  /* Responsive styles for smaller devices */
-@media (max-width: 768px) {
-    #text-title {
-        margin-top: 50px;
-        font-size: 22px; 
-        line-height: 28px;
-    }
-
-    #about p {
-        font-size: 14px;
-        line-height: 20px;
-    }
-
-    .tools-img {
-        height: 80px;
-        width: 80px;
-        margin: 10px;
-    }
-
+  /* Responsive styles */
+@media (max-width: 991.98px) {
+	/* Adjustments for medium devices */
 }
 
-/* Responsive styles for extra small devices */
-@media (max-width: 576px) {
-    #text-title {
-        margin-top: 30px;
-        font-size: 18px; 
-        line-height: 24px;
-    }
-
-    #about p {
-        font-size: 12px; 
-        line-height: 18px;
-    }
-
-    .tools-img {
-        height: 60px;
-        width: 60px;
-        margin: 8px;
-    }
-
-}
-
-/* Responsive styles for smaller devices */
-@media (max-width: 768px) {
+  @media (max-width: 767.98px) {
+    /* Adjustments for small devices */
     #title {
-        font-size: 48px; 
-        line-height: 56px; 
+      font-size: 48px;
+      line-height: 56px;
     }
-}
-
-/* Responsive styles for extra small devices */
-@media (max-width: 576px) {
-    #title {
-        font-size: 36px;
-        line-height: 42px; 
+    #text-title {
+      margin-top: 50px;
+      font-size: 22px;
+      line-height: 28px;
     }
-}
+    #paragraph {
+      font-size: 14px;
+      line-height: 20px;
+    }
+    .tools-img {
+      height: 80px;
+      width: 80px;
+      margin: 10px;
+    }
+  }
+  
+  @media (max-width: 425px) {
+    /* Adjustments for screens 425px and lower */
+    #about #title {
+      font-size: 36px;
+      line-height: 42px;
+      text-align: center;
+    }
+    
+    #about #paragraph {
+      font-size: 16px;
+      line-height: 22px;
+      text-align: justify;
+      margin: 0 auto;
+      max-width: 90%; 
+    }
+    
+    .tools-img {
+      margin: 8px 10px;
+    }
+  }
+  
+  
+  
