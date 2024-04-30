@@ -10,7 +10,7 @@ This portfolio showcases my projects, skills, and experiences. It serves as a ce
 
 To view my portfolio website, simply click the link below:
 
-[Janagagan Portfolio](https://ldyggn.github.io.portfolio)
+[Janagagan Portfolio](https://ldyggn.github.io/portfolio/)
 
 ## Features
 
